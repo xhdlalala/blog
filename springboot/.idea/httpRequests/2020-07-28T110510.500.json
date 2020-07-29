@@ -1,0 +1,1 @@
+{"timestamp":1595948710860,"status":500,"error":"Internal Server Error","message":"nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'creatTime' in 'class com.dong.entity.Article'","path":"/article/save"}

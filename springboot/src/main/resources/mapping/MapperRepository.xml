@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dong.mapper.MapperRepository">
+    <select id="findAll" resultType="Mapper">
+        select * from mapper
+    </select>
+
+    <select id="findById" parameterType="int" resultType="Mapper">
+        select * from mapper where id = #{id}
+    </select>
+
+    <insert id="save" parameterType="Mapper">
+        insert into mapper(tag_id,article_id)values (#{tagId},#{articleId})
+    </insert>
+</mapper>
